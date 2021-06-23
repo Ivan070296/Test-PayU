@@ -1,8 +1,0 @@
-<HTML>
-<HEAD>
-<TITLE>Test PayU</TITLE>
-</HEAD>
-<BODY>
-<P>Test PayU</P>
-</BODY>
-</HTML>
