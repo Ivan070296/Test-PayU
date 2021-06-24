@@ -1,0 +1,106 @@
+{
+	"id": "8f6daeb0-c5b4-459f-b331-1f15b2530154",
+	"name": "PaymentsOS Payment Flows Copy 2",
+	"timestamp": "2021-06-23T21:24:46.404Z",
+	"collection_id": "2abf8d08-8665-4d73-aa07-fd7544674113",
+	"folder_id": "a034ba51-c1a2-478b-8b9f-9f9a7e4b0cf4",
+	"environment_id": "0",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "101ba9bc-d44a-48ea-8a84-8f013e94c15a",
+			"name": "1. Create Token",
+			"url": "https://api.paymentsos.com/tokens",
+			"time": 512,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				512
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1e74a6d5-b2f6-4215-a427-a96b16112b0d",
+			"name": "2. Create Payment",
+			"url": "https://api.paymentsos.com/payments",
+			"time": 217,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				217
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ce495a22-729d-41d7-9f6e-d92ab286be30",
+			"name": "3. Create Authorization",
+			"url": "https://api.paymentsos.com/payments/68dc7ba1-db11-48d8-aad4-189e4a0b4830/authorizations",
+			"time": 348,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				348
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "057089c7-4ae3-4fb0-9d03-afa1e44516bd",
+			"name": "4. Create Capture",
+			"url": "https://api.paymentsos.com/payments/68dc7ba1-db11-48d8-aad4-189e4a0b4830/captures",
+			"time": 274,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				274
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1351,
+	"collection": {
+		"requests": [
+			{
+				"id": "101ba9bc-d44a-48ea-8a84-8f013e94c15a",
+				"method": "POST"
+			},
+			{
+				"id": "1e74a6d5-b2f6-4215-a427-a96b16112b0d",
+				"method": "POST"
+			},
+			{
+				"id": "ce495a22-729d-41d7-9f6e-d92ab286be30",
+				"method": "POST"
+			},
+			{
+				"id": "057089c7-4ae3-4fb0-9d03-afa1e44516bd",
+				"method": "POST"
+			}
+		]
+	}
+}
