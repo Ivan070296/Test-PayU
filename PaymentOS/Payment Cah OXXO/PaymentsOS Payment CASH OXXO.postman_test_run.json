@@ -1,0 +1,62 @@
+{
+	"id": "aa6c1f21-e393-4970-92ea-104c2ea00efc",
+	"name": "PaymentsOS Payment CASH OXXO",
+	"timestamp": "2021-06-23T21:26:47.944Z",
+	"collection_id": "069a2a70-94e9-4977-99ed-a3e3458f43ea",
+	"folder_id": "7b17f79e-7e38-45fd-a086-bdf02e31f714",
+	"environment_id": "0",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "c0ec7953-ac4a-43b1-a442-216ec088ad05",
+			"name": "Create Payment",
+			"url": "https://api.paymentsos.com/payments",
+			"time": 283,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				283
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c434cb26-819c-4151-96fd-6dc20346bd1a",
+			"name": "Create Charge",
+			"url": "https://api.paymentsos.com/payments/28bb8c07-c357-4950-b5be-44953e66e5bc/charges",
+			"time": 268,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				268
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 551,
+	"collection": {
+		"requests": [
+			{
+				"id": "c0ec7953-ac4a-43b1-a442-216ec088ad05",
+				"method": "POST"
+			},
+			{
+				"id": "c434cb26-819c-4151-96fd-6dc20346bd1a",
+				"method": "POST"
+			}
+		]
+	}
+}
